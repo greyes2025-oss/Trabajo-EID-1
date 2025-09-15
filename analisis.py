@@ -47,7 +47,7 @@ def calcular_dominio(funcion):
         except Exception:
             pasos.append("   No se pudo resolver la ecuación del denominador.")
 
-    #Análisis de Raíces Cuadradas (CORREGIDO)
+    #Análisis de Raíces Cuadradas 
     # Esto busca potencias elevadas a 1/2 (o 0.5), que es lo mismo que una raíz cuadrada
     raices = funcion.atoms(sp.Pow)
     for raiz in raices:
